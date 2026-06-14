@@ -630,6 +630,29 @@ footer span { font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:0.1em;
   .custom-prose-title { margin-bottom: 32px; }
 }
 
+
+/* ═══ PULL QUOTE ═══ */
+.prose-pull-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(22px, 2.8vw, 38px);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--ink);
+  opacity: 0.75;
+  margin: 0 0 52px 0;
+  padding-left: 28px;
+  border-left: 2px solid var(--dusk);
+}
+
+/* ═══ PREMIER MOT DORÉ ═══ */
+.prose-first-word {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15em;
+  font-weight: 500;
+  color: var(--dusk);
+  letter-spacing: 0.02em;
+}
 </style>
 </head>
 <body>
@@ -698,24 +721,26 @@ footer span { font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:0.1em;
 <!-- ═══ SECTION RDC ═══ -->
 <section class="custom-prose-section">
   <div class="custom-prose-inner">
-    <p class="section-label-custom">Rez-de-chaussée</p>
+    <p class="section-label-custom">Un bout de notre histoire</p>
     <h2 class="custom-prose-title">Le rez-de-chaussée qui va vous faire détester d'être à l'étage.</h2>
     <div class="custom-prose-body">
-      <p>On a longtemps eu des a priori sur le rez-de-chaussée. Moins de vue, moins de caractère — c'est ce qu'on disait. Et puis on y a vécu. Et maintenant on ne saurait plus faire autrement.</p>
+      <p class="prose-pull-quote">« Le séjour ne commence pas par une corvée. Il commence. »</p>
 
-      <p><em>L'arrivée, d'abord.</em> La voiture se gare juste devant. Les valises, les courses, les affaires du week-end — tout passe directement du coffre à l'appartement. Le séjour ne commence pas par une corvée. Il commence.</p>
+      <p><span class="prose-first-word">On</span> a longtemps eu des a priori sur le rez-de-chaussée. Moins de vue, moins de caractère — c'est ce qu'on disait. Et puis on y a vécu. Et maintenant on ne saurait plus faire autrement.</p>
 
-      <p>Le lendemain matin, on sort pour la plage. Les planches à voile, les paddles, le matériel — tout est déjà au bon étage. <em>Pas d'ascenseur à appeler, pas d'escalier à négocier.</em> On sort, on charge, on est à l'eau en deux minutes. Les vélos attendent devant le balcon pour ceux qui préfèrent rouler. C'est une liberté de mouvement que les étages ne donnaient pas.</p>
+      <p><em>L'arrivée, d'abord.</em> <span class="prose-first-word">La</span> voiture se gare juste devant. Les valises, les courses, les affaires du week-end — tout passe directement du coffre à l'appartement. Le séjour ne commence pas par une corvée. Il commence.</p>
 
-      <p>Au retour, le chien est attaché juste devant — il sèche au soleil sur le trottoir, et quand il rentre, <em>il rentre directement.</em> Pas d'ascenseur avec du sable partout, pas de couloir à nettoyer jusqu'au troisième. Il secoue, on rit, c'est fini.</p>
+      <p><span class="prose-first-word">Le</span> lendemain matin, on sort pour la plage. Les planches à voile, les paddles, le matériel — tout est déjà au bon étage. <em>Pas d'ascenseur à appeler, pas d'escalier à négocier.</em> On sort, on charge, on est à l'eau en deux minutes. Les vélos attendent devant le balcon pour ceux qui préfèrent rouler. C'est une liberté de mouvement que les étages ne donnaient pas.</p>
 
-      <p>Puis vient le moment de la sieste. L'appartement est exposé sud-est — <em>une lumière franche toute la journée.</em> Et pourtant, l'après-midi il reste frais. La sieste se fait naturellement, fenêtres ouvertes, sans chercher la climatisation.</p>
+      <p><span class="prose-first-word">Au</span> retour, le chien est attaché juste devant — il sèche au soleil sur le trottoir, et quand il rentre, <em>il rentre directement.</em> Pas d'ascenseur avec du sable partout, pas de couloir à nettoyer jusqu'au troisième. Il secoue, on rit, c'est fini.</p>
 
-      <p>Notre grand-mère, quand elle est seule sur le mini-balcon, est à la même hauteur que les passants. Elle papote depuis le seuil. Les vacanciers s'arrêtent. <em>Elle s'est fait plusieurs amis qu'elle revoit tous les étés.</em></p>
+      <p><span class="prose-first-word">Puis</span> vient le moment de la sieste. L'appartement est exposé sud-est — <em>une lumière franche toute la journée.</em> Et pourtant, l'après-midi il reste frais. La sieste se fait naturellement, fenêtres ouvertes, sans chercher la climatisation.</p>
 
-      <p>Le soir, les invités arrivent à pied ou à vélo, posent leurs affaires devant. Les verres sortent, la rue devient une terrasse improvisée. On a vu jusqu'à une quinzaine de personnes entre le balcon et le trottoir pour les soirées les plus festives. Et les soirs plus calmes, <em>l'apéro se termine parfois à la plage.</em></p>
+      <p><span class="prose-first-word">Notre</span> grand-mère, quand elle est seule sur le mini-balcon, est à la même hauteur que les passants. Elle papote depuis le seuil. Les vacanciers s'arrêtent. <em>Elle s'est fait plusieurs amis qu'elle revoit tous les étés.</em></p>
 
-      <p>Le rez-de-chaussée donne des facilités si évidentes qu'on finit par les oublier — jusqu'au jour où on doit s'en passer.</p>
+      <p><span class="prose-first-word">Le</span> soir, les invités arrivent à pied ou à vélo, posent leurs affaires devant. Les verres sortent, la rue devient une terrasse improvisée. On a vu jusqu'à une quinzaine de personnes entre le balcon et le trottoir pour les soirées les plus festives. Et les soirs plus calmes, <em>l'apéro se termine parfois à la plage.</em></p>
+
+      <p><span class="prose-first-word">Le</span> rez-de-chaussée donne des facilités si évidentes qu'on finit par les oublier — jusqu'au jour où on doit s'en passer.</p>
     </div>
   </div>
 </section>
@@ -723,18 +748,20 @@ footer span { font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:0.1em;
 <!-- ═══ SECTION CALME ═══ -->
 <section class="custom-prose-section custom-prose-alt">
   <div class="custom-prose-inner">
-    <p class="section-label-custom">Emplacement</p>
+    <p class="section-label-custom">Un bout de notre histoire</p>
     <h2 class="custom-prose-title">Le calme et le silence de la nature, au plus proche du centre.</h2>
     <div class="custom-prose-body">
-      <p>Les mouettes font du bruit. Pas un bruit de fond agréable — un bruit réel, strident, à cinq heures du matin. De vraies fêtardes, qui ne s'arrêtent jamais. <em>Ici on ne les entend pas : la rue est calme, les nuits sont calmes, et les matins appartiennent encore à ceux qui décident de se lever.</em></p>
+      <p class="prose-pull-quote">« Les matins appartiennent encore à ceux qui décident de se lever. »</p>
 
-      <p>Au bout de la rue — à une minute à pied — commencent les dunes du Touquet. Forêt de pins, sable, et des biches qui traversent au crépuscule. <em>Ce n'est pas une image de brochure : c'est ce qu'on voit quand on sort se promener le soir.</em> Le chien peut y courir sans laisse, dans un espace qui lui appartient le temps d'une balade.</p>
+      <p><span class="prose-first-word">Les</span> mouettes font du bruit. Pas un bruit de fond agréable — un bruit réel, strident, à cinq heures du matin. De vraies fêtardes, qui ne s'arrêtent jamais. <em>Ici on ne les entend pas : la rue est calme, les nuits sont calmes, et les matins appartiennent encore à ceux qui décident de se lever.</em></p>
 
-      <p>La plage est à deux minutes. Et nous sommes pile à la jonction entre la zone de baignade surveillée et la zone libre — ce qui change tout. Sur la baignade surveillée, chiens et activités nautiques sont interdits ; depuis le centre, il faut compter quinze minutes pour rejoindre la zone libre avec le matériel et la laisse. <em>Depuis ici, on pose la laisse, on sort la planche, et on y est.</em> Avec le choix : plage surveillée ou plage libre, selon l'envie du jour.</p>
+      <p><span class="prose-first-word">Au</span> bout de la rue — à une minute à pied — commencent les dunes du Touquet. Forêt de pins, sable, et des biches qui traversent au crépuscule. <em>Ce n'est pas une image de brochure : c'est ce qu'on voit quand on sort se promener le soir.</em> Le chien peut y courir sans laisse, dans un espace qui lui appartient le temps d'une balade.</p>
 
-      <p>Les bars de plage sont à quatre minutes à pied. Le centre du Touquet — restaurants, commerces, marché — à huit minutes. <em>On profite du calme sans rien sacrifier.</em> Le soir, aucun bruit de fête ne remonte jusqu'ici. La rue se termine sur les dunes — ce n'est pas une rue de passage, c'est une rue d'arrivée. Les gens qui la remontent ont une destination, et cette destination, c'est la mer.</p>
+      <p><span class="prose-first-word">La</span> plage est à deux minutes. Et nous sommes pile à la jonction entre la zone de baignade surveillée et la zone libre — ce qui change tout. Sur la baignade surveillée, chiens et activités nautiques sont interdits ; depuis le centre, il faut compter quinze minutes pour rejoindre la zone libre avec le matériel et la laisse. <em>Depuis ici, on pose la laisse, on sort la planche, et on y est.</em> Avec le choix : plage surveillée ou plage libre, selon l'envie du jour.</p>
 
-      <p>Et quand on veut l'animation, on va la chercher. <em>On a fait des soirées à trente personnes dans cet appartement.</em> Tout est une question de curseur.</p>
+      <p><span class="prose-first-word">Les</span> bars de plage sont à quatre minutes à pied. Le centre du Touquet — restaurants, commerces, marché — à huit minutes. <em>On profite du calme sans rien sacrifier.</em> Le soir, aucun bruit de fête ne remonte jusqu'ici. La rue se termine sur les dunes — ce n'est pas une rue de passage, c'est une rue d'arrivée. Les gens qui la remontent ont une destination, et cette destination, c'est la mer.</p>
+
+      <p><span class="prose-first-word">Et</span> quand on veut l'animation, on va la chercher. <em>On a fait des soirées à trente personnes dans cet appartement.</em> Tout est une question de curseur.</p>
     </div>
   </div>
 </section>
