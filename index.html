@@ -631,17 +631,46 @@ footer span { font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:0.1em;
 }
 
 
+/* ═══ CUSTOM PROSE LAYOUT ═══ */
+.custom-prose-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 0 60px;
+  align-items: start;
+}
+.custom-prose-left {
+  position: sticky;
+  top: 80px;
+  padding-top: 6px;
+}
+.custom-prose-label-big {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(13px, 1.1vw, 16px);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--dusk);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  opacity: 0.85;
+  writing-mode: horizontal-tb;
+}
+.custom-prose-right {
+  min-width: 0;
+}
+
 /* ═══ PULL QUOTE ═══ */
 .prose-pull-quote {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(22px, 2.8vw, 38px);
+  font-size: clamp(20px, 2.4vw, 32px);
   font-weight: 300;
   font-style: italic;
-  line-height: 1.35;
+  line-height: 1.4;
   color: var(--ink);
-  opacity: 0.75;
-  margin: 0 0 52px 0;
-  padding-left: 28px;
+  opacity: 0.72;
+  margin: 0 0 48px 0;
+  padding-left: 24px;
   border-left: 2px solid var(--dusk);
 }
 
@@ -652,6 +681,20 @@ footer span { font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:0.1em;
   font-weight: 500;
   color: var(--dusk);
   letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .custom-prose-inner {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .custom-prose-left {
+    position: static;
+    margin-bottom: 20px;
+  }
+  .custom-prose-label-big {
+    font-size: 13px;
+  }
 }
 </style>
 </head>
@@ -721,14 +764,17 @@ footer span { font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:0.1em;
 <!-- ═══ SECTION RDC ═══ -->
 <section class="custom-prose-section">
   <div class="custom-prose-inner">
-    <p class="section-label-custom">Un bout de notre histoire</p>
+    <div class="custom-prose-left">
+      <p class="custom-prose-label-big">Un bout<br>de notre<br>histoire</p>
+    </div>
+    <div class="custom-prose-right">
     <h2 class="custom-prose-title">Le rez-de-chaussée qui va vous faire détester d'être à l'étage.</h2>
     <div class="custom-prose-body">
-      <p class="prose-pull-quote">« Le séjour ne commence pas par une corvée. Il commence. »</p>
+      <p class="prose-pull-quote">« Pas d'ascenseur avec du sable partout, pas de couloir à nettoyer jusqu'au troisième. Il secoue, on rit, c'est fini. »</p>
 
       <p><span class="prose-first-word">On</span> a longtemps eu des a priori sur le rez-de-chaussée. Moins de vue, moins de caractère — c'est ce qu'on disait. Et puis on y a vécu. Et maintenant on ne saurait plus faire autrement.</p>
 
-      <p><em>L'arrivée, d'abord.</em> <span class="prose-first-word">La</span> voiture se gare juste devant. Les valises, les courses, les affaires du week-end — tout passe directement du coffre à l'appartement. Le séjour ne commence pas par une corvée. Il commence.</p>
+      <p><span class="prose-first-word">L'arrivée, d'abord.</span> La voiture se gare juste devant. Les valises, les courses, les affaires du week-end — tout passe directement du coffre à l'appartement. Le séjour ne commence pas par une corvée. Il commence.</p>
 
       <p><span class="prose-first-word">Le</span> lendemain matin, on sort pour la plage. Les planches à voile, les paddles, le matériel — tout est déjà au bon étage. <em>Pas d'ascenseur à appeler, pas d'escalier à négocier.</em> On sort, on charge, on est à l'eau en deux minutes. Les vélos attendent devant le balcon pour ceux qui préfèrent rouler. C'est une liberté de mouvement que les étages ne donnaient pas.</p>
 
@@ -742,16 +788,20 @@ footer span { font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:0.1em;
 
       <p><span class="prose-first-word">Le</span> rez-de-chaussée donne des facilités si évidentes qu'on finit par les oublier — jusqu'au jour où on doit s'en passer.</p>
     </div>
+    </div>
   </div>
 </section>
 
 <!-- ═══ SECTION CALME ═══ -->
 <section class="custom-prose-section custom-prose-alt">
   <div class="custom-prose-inner">
-    <p class="section-label-custom">Un bout de notre histoire</p>
+    <div class="custom-prose-left">
+      <p class="custom-prose-label-big">Un bout<br>de notre<br>histoire</p>
+    </div>
+    <div class="custom-prose-right">
     <h2 class="custom-prose-title">Le calme et le silence de la nature, au plus proche du centre.</h2>
     <div class="custom-prose-body">
-      <p class="prose-pull-quote">« Les matins appartiennent encore à ceux qui décident de se lever. »</p>
+      <p class="prose-pull-quote">« Depuis ici, on pose la laisse, on sort la planche, et on y est. »</p>
 
       <p><span class="prose-first-word">Les</span> mouettes font du bruit. Pas un bruit de fond agréable — un bruit réel, strident, à cinq heures du matin. De vraies fêtardes, qui ne s'arrêtent jamais. <em>Ici on ne les entend pas : la rue est calme, les nuits sont calmes, et les matins appartiennent encore à ceux qui décident de se lever.</em></p>
 
@@ -762,6 +812,7 @@ footer span { font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:0.1em;
       <p><span class="prose-first-word">Les</span> bars de plage sont à quatre minutes à pied. Le centre du Touquet — restaurants, commerces, marché — à huit minutes. <em>On profite du calme sans rien sacrifier.</em> Le soir, aucun bruit de fête ne remonte jusqu'ici. La rue se termine sur les dunes — ce n'est pas une rue de passage, c'est une rue d'arrivée. Les gens qui la remontent ont une destination, et cette destination, c'est la mer.</p>
 
       <p><span class="prose-first-word">Et</span> quand on veut l'animation, on va la chercher. <em>On a fait des soirées à trente personnes dans cet appartement.</em> Tout est une question de curseur.</p>
+    </div>
     </div>
   </div>
 </section>
