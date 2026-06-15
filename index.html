@@ -715,12 +715,14 @@ footer span { font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:0.1em;
 }
 .prose-photo-caption {
   font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--dusk);
   opacity: 0.7;
-  margin-top: 10px;
+  margin: 8px 0 0 0;
+  padding: 0;
+  line-height: 1;
 }
 </style>
 <!-- Meta Pixel Code -->
@@ -829,11 +831,9 @@ src="https://www.facebook.com/tr?id=1224404199706103&ev=PageView&noscript=1"
     </div>
     <div class="custom-prose-right">
     <h2 class="custom-prose-title">Le rez-de-chaussée qui va vous faire détester d'être à l'étage.</h2>
-    <div class="custom-prose-photo-wrap">
-      <div class="prose-photo-insert">
-        <img src="/images/velo_maman.jpg" loading="lazy" alt="Arriver, c'est déjà commencer" />
-        <p class="prose-photo-caption">Arriver, c'est déjà commencer.</p>
-      </div>
+    <div class="prose-photo-insert">
+      <img src="/images/velo_maman.jpg" loading="lazy" alt="Arriver, c'est déjà commencer" />
+      <p class="prose-photo-caption">Arriver, c'est déjà commencer.</p>
     </div>
     <div class="custom-prose-body">
       <p class="prose-pull-quote">« Pas d'ascenseur avec du sable partout, pas de couloir à nettoyer jusqu'au troisième. Il secoue, on rit, c'est fini. »</p>
@@ -1546,9 +1546,9 @@ function switchDay(name, btn) {
 // ── LIGHTBOX ──
 const LIGHTBOX_PHOTOS = [
   { src: "/images/lightbox_sejour.jpg", label: "Séjour" },
+  { src: "/images/lightbox_sejour_salon.jpg", label: "Séjour · salon" },
   { src: "/images/cuisine_new.jpg", label: "Cuisine" },
   { src: "/images/lightbox_chambre.jpg", label: "Chambre" },
-  { src: "/images/lightbox_sejour_salon.jpg", label: "Séjour · salon" },
   { src: "/images/salle_de_bain.jpg", label: "Salle de bain" },
   { src: "/images/lightbox_cabine.jpg", label: "Cabine" },
   { src: "/images/cave.jpg", label: "Cave" },
