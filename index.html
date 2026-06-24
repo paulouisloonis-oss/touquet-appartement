@@ -50,6 +50,15 @@ nav.scrolled .nav-logo { color:var(--ink); }
 }
 nav.scrolled .nav-cta { color:var(--ink); border-color:var(--ink); }
 .nav-cta:hover { background:var(--ink); color:#fff !important; border-color:var(--ink) !important; }
+.whatsapp-nav {
+  display:flex; align-items:center; gap:8px;
+  background:#25D366; color:#fff !important; text-decoration:none;
+  padding:10px 20px; border-radius:50px;
+  font-family:'DM Sans',sans-serif; font-size:13px; font-weight:500;
+  box-shadow:0 3px 14px rgba(37,211,102,0.4);
+  transition:transform 0.2s, box-shadow 0.2s;
+}
+.whatsapp-nav:hover { transform:translateY(-2px); box-shadow:0 5px 20px rgba(37,211,102,0.55); }
 
 /* HERO */
 .hero {
@@ -727,6 +736,7 @@ footer span { font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:0.1em;
 
 /* ═══ BOUTON FLOTTANT WHATSAPP ═══ */
 .whatsapp-float {
+  display: none;
   position: fixed;
   bottom: 28px;
   left: 28px;
@@ -813,7 +823,7 @@ src="https://www.facebook.com/tr?id=1224404199706103&ev=PageView&noscript=1"
 
 <nav id="nav">
   <a href="#" class="nav-logo">5 av. Louison Bobet · Le Touquet</a>
-  <a href="https://wa.me/33769872276?text=Bonjour%2C%20j%27ai%20vu%20votre%20appartement%20au%20Touquet%20et%20j%27aimerais%20en%20savoir%20plus." target="_blank" class="nav-cta">💬 Nous contacter</a>
+  <a href="https://wa.me/33769872276?text=Bonjour%2C%20j%27ai%20vu%20votre%20appartement%20au%20Touquet%20et%20j%27aimerais%20en%20savoir%20plus." target="_blank" class="whatsapp-nav"><svg viewBox="0 0 32 32" fill="white" width="20" height="20"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.668 4.608 1.818 6.5L4 29l7.727-1.795A12.94 12.94 0 0016 28c6.627 0 12-5.373 12-12S22.627 3 16 3zm6.07 13.78c-.33-.165-1.953-.963-2.256-1.073-.303-.11-.524-.165-.745.165-.22.33-.855 1.073-1.048 1.293-.193.22-.386.248-.716.083-.33-.165-1.393-.514-2.653-1.638-.98-.874-1.64-1.953-1.833-2.283-.193-.33-.02-.508.145-.672.149-.148.33-.385.495-.578.165-.193.22-.33.33-.55.11-.22.055-.413-.027-.578-.083-.165-.745-1.793-1.02-2.455-.27-.644-.543-.557-.745-.567l-.633-.011c-.22 0-.578.083-.881.413-.303.33-1.155 1.128-1.155 2.75s1.183 3.19 1.348 3.41c.165.22 2.328 3.556 5.644 4.987.789.34 1.404.543 1.884.695.791.252 1.511.216 2.08.131.635-.094 1.953-.798 2.228-1.569.275-.77.275-1.43.193-1.568-.083-.138-.303-.22-.633-.385z"/></svg> Nous contacter</a>
 </nav>
 
 <!-- ═══ HERO ═══ -->
